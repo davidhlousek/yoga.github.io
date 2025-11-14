@@ -388,7 +388,7 @@ input,select,textarea{width:100%;padding:12px 14px;border:1px solid #e6e6e0;bord
   const hero=$("#heroImg");
   (function setHero(){
     const folder="Sarka Yoga 2025 foto";
-    const file="uTina_small_ANT_0731_ANT_0727 copy.jpg";
+    const file="/uTina_small_ANT_0731_ANT_0727 copy.jpg";
     const url = `${encodeURI(folder)}/${encodeURIComponent(file)}`;
     const pre=new Image();
     pre.onload=()=>{ hero.style.backgroundImage=`linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.88) 70%), url("${url}")`; };
@@ -454,7 +454,7 @@ input,select,textarea{width:100%;padding:12px 14px;border:1px solid #e6e6e0;bord
   const honeypot = document.getElementById("honeypot");
   const sentAt = document.getElementById("sentAt");
   const iframe = document.getElementById("hidden_iframe");
-  const GAS_ENDPOINT = "PASTE_TVOJE_EXEC_URL_SEM"; // vlož svou Web App URL končící /exec
+  const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbxCTINbaz1GzgtABsvu1hKSsGRTx9Tvl3fWTRnZfWQ2ZJ0SFNg2EJjB91lkP38DJ9nysw/exec"; // vlož svou Web App URL končící /exec
 
   let submitting=false;
   form.addEventListener("submit",(e)=>{
@@ -491,15 +491,15 @@ input,select,textarea{width:100%;padding:12px 14px;border:1px solid #e6e6e0;bord
     const gallery = document.getElementById("gallery");
     const folder  = "Sarka Yoga 2025 foto";
     const files   = [
-      "Monika Krp 2.jpg","Monika Krp 3.jpg","Sona Pru.jpg","Martina Kosová.webp",
-      "Postovska_IMG_6524.jpg","Postovska_IMG_6525.jpg","Postovska_IMG_6525 copy.jpg",
-      "Postovska_IMG_6528.jpg","Postovska_IMG_6530.jpg","Postovska_IMG_6533.jpg",
-      "Postovska_IMG_6535.jpg","Postovska_IMG_6546.jpg","Postovska_IMG_6550.jpg",
-      "Postovska_IMG_6555.jpg","Postovska_IMG_6559.jpg","Postovska_IMG_6567.jpg",
-      "Postovska_IMG_6574.jpg","Postovska_IMG_6576.jpg","Postovska_IMG_6577.jpg",
-      "Postovska_IMG_6596.jpg","Postovska_IMG_6608.jpg",
-      "UTina_ANT_0628 copy.jpg","UTina_ANT_0666 copy.jpg","UTina_ANT_0688 copy.jpg","UTina_ANT_0712 copy.jpg",
-      "yoga_id.JPG","yogena.JPG"
+      "/Monika Krp 2.jpg","/Monika Krp 3.jpg","/Sona Pru.jpg","/Martina Kosová.webp",
+      "/Postovska_IMG_6524.jpg","/Postovska_IMG_6525.jpg","/Postovska_IMG_6525 copy.jpg",
+      "/Postovska_IMG_6528.jpg","/Postovska_IMG_6530.jpg","/Postovska_IMG_6533.jpg",
+      "/Postovska_IMG_6535.jpg","/Postovska_IMG_6546.jpg","/Postovska_IMG_6550.jpg",
+      "/Postovska_IMG_6555.jpg","/Postovska_IMG_6559.jpg","/Postovska_IMG_6567.jpg",
+      "/Postovska_IMG_6574.jpg","/Postovska_IMG_6576.jpg","/Postovska_IMG_6577.jpg",
+      "/Postovska_IMG_6596.jpg","//Postovska_IMG_6608.jpg",
+      "/UTina_ANT_0628 copy.jpg","/UTina_ANT_0666 copy.jpg","/UTina_ANT_0688 copy.jpg","UTina_ANT_0712 copy.jpg",
+      "/yoga_id.JPG","/yogena.JPG"
     ];
     gallery.innerHTML="";
     files.forEach(name=>{
